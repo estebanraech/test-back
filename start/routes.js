@@ -16,7 +16,5 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.get('/users', 'UserController.getUsers')
-Route.get('/users-exams', 'UserController.getUsersExams')
 Route.get('/exams', 'ExamController.getExams')
 Route.on('/').render('welcome')
